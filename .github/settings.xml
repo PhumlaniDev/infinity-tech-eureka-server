@@ -43,7 +43,7 @@
         <!-- GitHub Packages repository (used for your own artifacts) -->
         <repository>
           <id>github</id>
-          <url>https://maven.pkg.github.com/phumlanidev/techhivestore</url>
+          <url>https://maven.pkg.github.com/phumlanidev/infinitytecheurekaserver</url>
         </repository>
       </repositories>
     </profile>
