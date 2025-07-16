@@ -1,0 +1,32 @@
+server:
+  port: 8761
+
+spring:
+  application:
+    name: eureka-server
+  profiles:
+    active: dev
+  config:
+    fail-fast: true
+    retry:
+      max-attempts: 6
+      initial-interval: 2000
+      multiplier: 1.5
+
+eureka:
+  client:
+    register-with-eureka: false
+    fetch-registry: false
+  server:
+    wait-time-in-ms-when-sync-empty: 0
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info
+  endpoint:
+    health:
+      show-details: always
+      discovery:
+        enabled: false
