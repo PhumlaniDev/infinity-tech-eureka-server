@@ -4,14 +4,6 @@ server:
 spring:
   application:
     name: eureka-server
-  profiles:
-    active: dev
-  config:
-    fail-fast: true
-    retry:
-      max-attempts: 6
-      initial-interval: 2000
-      multiplier: 1.5
 
 eureka:
   client:
@@ -28,5 +20,3 @@ management:
   endpoint:
     health:
       show-details: always
-      discovery:
-        enabled: false
